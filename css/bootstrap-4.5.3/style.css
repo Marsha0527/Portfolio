@@ -11,3 +11,9 @@ margin-left: 15px;
 }
 
 
+.flex-container-images {
+display: flex;
+direction: column;
+    width: 5px;
+    height: 5px;
+}
