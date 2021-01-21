@@ -54,9 +54,7 @@
             <p class="d-none d-md-block"><h4></h4>
               </p>
               <br>
-              <a target="_blank" href="\img\mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg">
-              <img src="\img\mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="business woman">
-            </a>
+               <img src="\img\mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="business woman">
           </div>
         </div>
       </div>
@@ -161,35 +159,9 @@ always make visually interesting sites.
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
 
-<script>
-    //  Init Scrollspy
-$('body').scrollspy({target: '#main-nav'});
 
-//  Smooth Scrolling
-$("#main-nav a").on('click', function (event) {
-  if (this.hash !=="") {
-    event.preventDefault();
 
-    const hash = this.hash;
-
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function () {
-
-      window.location.hash = hash;
-    });
-  }
-  });
-
-  $('.port-item').click(function() {
-    $('.collapse').collapse('hide');
-  });
-
-  $(document).on('click', '[data-toggle="lightbox"]', function(e) {
-   e.preventDefault();
-   $(this).ekkoLightbox();
-  });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
