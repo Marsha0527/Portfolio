@@ -158,9 +158,36 @@ always make visually interesting sites.
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+    //  Init Scrollspy
+    <script>
+    $('body').scrollspy({target: '#main-nav'});
 
+    //  Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !=="") {
+        event.preventDefault();
+    
+        const hash = this.hash;
+    
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+    
+          window.location.hash = hash;
+        });
+      }
+      });
+    
+      $('.port-item').click(function() {
+        $('.collapse').collapse('hide');
+      });
+    
+      $(document).on('click', '[data-toggle="lightbox"]', function(e) {
+       e.preventDefault();
+       $(this).ekkoLightbox();
+      });
 
-
+</script>
     <script src="main.js"></script>
 </body>
 
