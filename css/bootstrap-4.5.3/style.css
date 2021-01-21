@@ -17,3 +17,7 @@ direction: column;
     width: 5px;
     height: 5px;
 }
+
+.rounded {
+    border-radius: 100%;
+}
