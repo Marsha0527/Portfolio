@@ -1,0 +1,6 @@
+
+#work-section .flex-container-images {
+    display: flex;
+    direction: column;
+    justify-content: center;
+}
