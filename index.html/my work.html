@@ -18,19 +18,19 @@
 <body data-spy="scroll" data-target="#main-nav" id="home">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
   <div class="container">
-    <a href="index.html" class="navbar-brand"><h3>Get To Know</h3></a>
+    <a href="index.html" class="navbar-brand"><h1>Marsha Woods</h1></a>
      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item-active">
           <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link">About</a>
         </li>
-        <li class="nav-item-active">
+        <li class="nav-item">
           <a href="my work.html" class="nav-link">My Work</a>
         </li>
         <li class="nav-item">
@@ -41,30 +41,37 @@
   </div>
   </nav>
 
-  <!--  PORTFOLIO -->
-<section id="portfolio-section" class="bg-info p-5">
+  
+  <!--  My Work -->
+  <section id="work-section" class="bg-info p-5">
     <div class="container">
         <div class="row">
             <div class="col-md-8 m-auto text-center">
                 <br>
 <h3>My Work</h3>
-            </div>
+<hr>
+<div class="flex-container-images">
+  <div>
+<img src="\img\new cls.png" alt="cls site">
+</div>
+<br>
+<div>
+  <img src="\img\3P img.png" alt="port img">
+</div>
+</div>
         </div>
-    
+      </div>
     </div>
-    
-    </section>
+     </section>
 
-    <!--  FOOTER  -->
-    <footer id="main-footer" class="text-center p-5 bg-secondary"></footer>
+ <!-- FOOTER  -->
+<footer id="main-footer" class="text-center p-3 bg-secondary">
     <div class="container">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
-
-    </div>
+       <div class="row">
+         <a href="http://facebook.com" class="text-white">
+        <i class="fab fa-facebook"></i></a>
+         </div>
+       </div>
 </footer>
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -73,37 +80,37 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-
-
-    <script>
     //  Init Scrollspy
-$('body').scrollspy({target: '#main-nav'});
+    <script>
+    $('body').scrollspy({target: '#main-nav'});
 
-//  Smooth Scrolling
-$("#main-nav a").on('click', function (event) {
-  if (this.hash !=="") {
-    event.preventDefault();
+    //  Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !=="") {
+        event.preventDefault();
+    
+        const hash = this.hash;
+    
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+    
+          window.location.hash = hash;
+        });
+      }
+      });
+    
+      $('.port-item').click(function() {
+        $('.collapse').collapse('hide');
+      });
+    
+      $(document).on('click', '[data-toggle="lightbox"]', function(e) {
+       e.preventDefault();
+       $(this).ekkoLightbox();
+      });
 
-    const hash = this.hash;
-
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function () {
-
-      window.location.hash = hash;
-    });
-  }
-  });
-
-  $('.port-item').click(function() {
-    $('.collapse').collapse('hide');
-  });
-
-  $(document).on('click', '[data-toggle="lightbox"]', function(e) {
-   e.preventDefault();
-   $(this).ekkoLightbox();
-  });
-    </script>
+</script>
+    <script src="main.js"></script>
 </body>
 
 </html>
