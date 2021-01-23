@@ -17,13 +17,10 @@ direction: column;
 
 }
 
-.initial-image {
+.w3-sepia-min {
     border-radius: 50%;
     width: 10%;
     height: 10%;
 
 }
 
-#work-section {
-    color: yellow;
-}
