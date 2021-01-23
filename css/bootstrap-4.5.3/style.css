@@ -17,13 +17,11 @@ direction: column;
 
 }
 
-img {
-    border: 1px solid #a9a9a9;
-    padding: 10px;
-}
+.initial-image {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
 
-img:hover {
-    box-shadow: 0 0 5px 10px rgba(0, 140, 186, 0.5);
 }
 
 #work-section {
