@@ -3,3 +3,6 @@ body {
     font-size: 3px;
 }
 
+#home-section {
+    border-radius: 50%;
+}
