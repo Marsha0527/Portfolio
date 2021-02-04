@@ -36,3 +36,11 @@ body {
 .card {
     border: 1px solid #000;
 }
+
+.flex-container-img {
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-content: center;
+}
+    
