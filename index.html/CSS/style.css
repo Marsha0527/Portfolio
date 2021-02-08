@@ -47,3 +47,5 @@ body {
 .work-section img {
     display: flex;
     flex-direction: columns;
+    align-text: center;
+    justify-content: center;
