@@ -103,5 +103,6 @@ aside {
 .work-section .card {
     background-color: #000;
     border-radius: 5px;
+    border: green 5px solid;
 }
 
